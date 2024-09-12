@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>view movie</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+ 
+   
+
+</head>
+<body>
+    <%- include('./navbar') %>
+    <div class="container w-100 d-flex justify-content-center">
+        <div class="card w-100 pt-5 pr-5" >
+            <div class="card-body">
+              <div class="card-text pr-5 mr-3">
+                <img class="float-left" src="<%=data.productphotolarge%>" alt="Card image" style="width:40%;height: 50%;">
+                <p style="position: relative;left:10%"><strong><%=data.productname%></strong>
+                <p class="pt-2" style="position: relative;left:10%"><strong>Price:<span class="pl-3"> ₹<%=data.price%></strong></span></p>
+                <p class="pt-2" style="position: relative;left:10%"><strong>Stock<span class="pl-3"> <%=data.stock%></strong></span></p>
+                <p class="pt-2" style="position: relative;left:10%;text-decoration: underline;"><strong>Description</p>
+                <p  style="position: relative;left:10%;text-align: justify" ><span class="pr-3"> <%=data.description%></strong></span></p>
+            </div> 
+            </div>
+          </div>
+    </div>
+</body>
+</html>
